@@ -4,28 +4,28 @@ A modern, responsive, and interactive personal portfolio website built to showca
 
 ## 🚀 Features
 
-* **Modern Design:** Clean aesthetics, glassmorphism elements, and smooth CSS animations.
-* **Responsive Layout:** Fully responsive grid system built with Bootstrap 5, optimized for mobile, tablet, and desktop devices.
-* **Interactive Projects Gallery:** A dedicated section displaying projects in a sleek 2x3 carousel grid with blur-hover effects for displaying project details and technologies used.
-* **Dynamic Typography:** Uses Google Fonts pairing ('Raleway' for headings & buttons, 'Figtree' for body copy).
-* **SEO & Performance Optimized:** Semantic HTML5 structure and optimized assets for faster loading times.
+- **Modern Design:** Clean aesthetics, glassmorphism elements, and smooth CSS animations.
+- **Responsive Layout:** Fully responsive grid system built with Bootstrap 5, optimized for mobile, tablet, and desktop devices.
+- **Interactive Projects Gallery:** A dedicated section displaying projects in a sleek 2x3 carousel grid with blur-hover effects for displaying project details and technologies used.
+- **Dynamic Typography:** Uses Google Fonts pairing ('Raleway' for headings & buttons, 'Figtree' for body copy).
+- **SEO & Performance Optimized:** Semantic HTML5 structure and optimized assets for faster loading times.
 
 ## 🛠️ Tech Stack
 
-* **HTML5:** Semantic architecture.
-* **CSS3:** Custom styles, CSS variables for theming, transitions, and hover animations.
-* **JavaScript (Vanilla):** DOM manipulation, smooth scrolling, and dynamic elements.
-* **Bootstrap 5 (v5.3.3):** Utility classes, responsive grid system, and the interactive projects carousel.
-* **Google Fonts:** Figtree & Raleway.
+- **HTML5:** Semantic architecture.
+- **CSS3:** Custom styles, CSS variables for theming, transitions, and hover animations.
+- **JavaScript (Vanilla):** DOM manipulation, smooth scrolling, and dynamic elements.
+- **Bootstrap 5 (v5.3.3):** Utility classes, responsive grid system, and the interactive projects carousel.
+- **Google Fonts:** Figtree & Raleway.
 
 ## 📁 Repository Structure
 
 ```
-├── css/                   
+├── css/
 │   └── style.css       # Custom styling and animations
-├── js/                 
+├── js/
 │   └── script.js       # Interactivity scripts
-├── assests/            
+├── assets/
 │   ├── docs/           # Resumes/CV files
 │   └── images/         # Icons, project thumbnails, and background images
 ├── index.html          # Main application file
@@ -50,8 +50,7 @@ To run this project locally, simply clone the repository and open the `index.htm
 
 - **Name:** Carlos Orozco
 - **Role:** Front-End Developer
-- **Email:** [Your Email Here]
+- **Email:**
 - **LinkedIn/GitHub:** [Your Links Here]
 
 ---
-*Coded with passion and coffee.* ☕

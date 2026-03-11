@@ -28,18 +28,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 
 /* Navbar Tuning */
 .navbar {
-    /*background-color: rgba(226, 229, 219, 0.95); /* matching --color-main with transparency */
     
-    */
-    backdrop-filter: blur(100px);
     transition: background-color 0.3s ease;
 }
 
 .nav-link {
     font-weight: 600;
-    color: var(--color-text-dark);
+    color: var(--color-bg-light);
     margin-left: 1rem;
     transition: color 0.3s ease;
+    text-shadow: 2px 2px 10px rgba(95, 95, 95, 0.8);
 }
 
 .nav-link:hover, .nav-link.active {
@@ -88,7 +86,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 .hero-section {
    /* background-color: var(--color-main);
    */
-   background-image: url('/assests/images/background_Hero-section.webp');
+   background-image: url('../assets/images/background_Hero-section.webp');
    background-size: cover;
    
    position: relative;
