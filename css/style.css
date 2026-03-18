@@ -14,8 +14,6 @@
 */
 
 
-
-
 body {
     font-family: 'Figtree', sans-serif;
     background-color: var(--color-main);
@@ -28,7 +26,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 
 /* Navbar Tuning */
 .navbar {
-    
     transition: background-color 0.3s ease;
 }
 
@@ -84,7 +81,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 
 /* Hero Section */
 .hero-section {
-   /* background-color: var(--color-main);
+   /* 
+   
+   background-color: var(--color-main);
    */
    background-image: url('../assets/images/background_Hero-section.webp');
    background-size: cover;
@@ -95,6 +94,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 
 .white-text{
     color: var(--color-bg-light);
+}
+.dark-text{
+    color: var(--color-text-dark);
 }
 
 .highlight-text {
@@ -144,6 +146,64 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
     
 }
 
+.label{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 1;   
+    border-radius: 100px 12px 12px 100px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.label::before{
+    content: "";
+    background-color: var(--color-text-dark);
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 12px;
+    left: 3px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.label-html:hover {
+    background-color: #E34F26;
+}
+
+.label-css:hover {
+    background-color: #1572B6;
+}
+
+.label-js:hover {
+    background-color: #F7DF1E;
+}
+
+.label-bootstrap:hover {
+    background-color:  #7952B3;
+}
+
+.label-react:hover {
+    background-color: #61DAFB;
+}
+
+.label-tailwind:hover {
+    background-color: #06B6D4;
+}
+
+.label-python:hover {
+    background-color: #3776AB;
+}
+
+
 .bg-custom-green {
     background-color: var(--color-accent-1);
     color: white;
@@ -151,12 +211,19 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
     padding: 0.5em 0.8em;
 }
 
+.bg-custon-white {
+    background-color: var(--color-main);
+    color: var(--color-text-dark);
+    font-weight: 400;
+}
+
+
 /* Project Cards */
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: transparent;
-    border-radius: 12px;
-    max-width: 90%;
+    border-radius: 4px; /* Instagram-style subtle or zero border radius */
+    width: 100%;
 }
 
 .project-card:hover {
