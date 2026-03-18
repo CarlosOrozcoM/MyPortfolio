@@ -5,6 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 
+    // Example of a simple form submit handler (prevent default)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Here you would typically handle the form submission, 
+            // e.g., send data to an API or email service.
+            alert('¡Gracias por tu mensaje! (Esta es una respuesta genérica de prueba)');
+            contactForm.reset();
+        });
+    }
+
     // Navbar shadow on scroll
     const navbar = document.getElementById('navbar');
     if (navbar) {
@@ -14,33 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 navbar.style.boxShadow = 'none';
             }
-        });
-    }
-
-    // EmailJS Form Submit Handler
-    const contactForm = document.getElementById('contactForm');
-    const btn = document.getElementById('submit-button');
-
-    if (contactForm && btn) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Update button text using textContent, not value, because it's a <button> tag
-            const originalText = btn.textContent;
-            btn.textContent = 'Sending...';
-
-            const serviceID = 'default_service';
-            const templateID = 'template_8xnjjb3';
-
-            emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.textContent = originalText;
-                alert('I will get in touch soon!');
-                contactForm.reset(); // Reset form only after successful sending
-            }, (err) => {
-                btn.textContent = originalText;
-                alert(JSON.stringify(err));
-            });
         });
     }
 });
