@@ -69,15 +69,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
     transform: translateY(-2px);
 }
 
-.btn-outline-primary {
-    color: var(--color-accent-1);
-    border-color: var(--color-accent-1);
-}
-
-.btn-outline-primary:hover {
-    background-color: var(--color-accent-1);
-    color: #fff;
-}
 
 /* Hero Section */
 .hero-section {
@@ -85,18 +76,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
    
    background-color: var(--color-main);
    */
-   background-image: url('../assets/images/background_Hero-section.webp');
+   background-image: url('../assets/images/background-hero-section.webp');
    background-size: cover;
    
    position: relative;
     overflow: hidden;
 }
 
-.white-text{
+.light-text{
     color: var(--color-bg-light);
-}
-.dark-text{
-    color: var(--color-text-dark);
 }
 
 .highlight-text {
@@ -204,14 +192,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 }
 
 
-.bg-custom-green {
-    background-color: var(--color-accent-1);
-    color: white;
-    font-weight: 400;
-    padding: 0.5em 0.8em;
-}
 
-.bg-custon-white {
+.bg-custom-white {
     background-color: var(--color-main);
     color: var(--color-text-dark);
     font-weight: 400;
@@ -258,27 +240,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
     opacity: 1 !important;
 }
 
-/* Custom carousel controls positioning */
-.custom-carousel-control {
-    width: 5%;
-}
-
-.custom-carousel-control.carousel-control-prev {
-    left: -5%;
-}
-
-.custom-carousel-control.carousel-control-next {
-    right: -5%;
-}
-
-@media (max-width: 768px) {
-    .custom-carousel-control.carousel-control-prev {
-        left: -15px;
-    }
-    .custom-carousel-control.carousel-control-next {
-        right: -15px;
-    }
-}
 
 
 /* Footer */
@@ -310,7 +271,6 @@ footer {
 }
 
 .delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
 @keyframes slideUp {
@@ -341,9 +301,6 @@ footer {
 
 .shape-fill-bg-light {
     fill: var(--color-bg-light);
-}
-.shape-fill-main {
-    fill: var(--color-main)
 }
 
 .shape-divider-bottom {
