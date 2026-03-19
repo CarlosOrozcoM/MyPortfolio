@@ -50,7 +50,7 @@ To run this project locally, simply clone the repository and open the `index.htm
 
 - **Name:** Carlos Orozco
 - **Role:** Front-End Developer
-- **Email:**
-- **LinkedIn/GitHub:** [Your Links Here]
+- [LinkedIn](https://www.linkedin.com/in/alberto-orozco-m/)
+- [Github](https://github.com/CarlosOrozcoM)
 
 ---
