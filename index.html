@@ -13,6 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS API -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('XmD0wqQncE0H-XrJe')</script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
 
@@ -44,12 +48,12 @@
     <!-- Landing Page (Hero) -->
     <section id="home" class="hero-section d-flex align-items-center min-vh-100">
         <div class="container text-start m-md-5 p-md-5">
-            <h2 class="white-text display-4 fw-medium mb-0 slide-up-anim text-shadow">Carlos</h2>
+            <h1 class="white-text display-2 fw-medium mb-0 slide-up-anim text-shadow">Carlos</h1>
             <h1 class="display-1 fw-bold mb-0 slide-up-anim text-shadow"><span class="highlight-text">Orozco</span></h1>
-            <h3 class="white-text h3 mb-4 slide-up-anim delay-1 text-shadow">Front-End Developer</h3>
+            <h2 class="white-text mb-4 slide-up-anim delay-1 text-shadow">Front-End Developer</h2>
             <div class="slide-up-anim delay-3">
                 <a href="#projects" class="btn btn-primary btn-lg me-3">Projects</a>
-                <a href="/assets/docs/CarlosOrozco_FrontEndCV.pdf" class="btn btn-outline-secondary btn-lg" download="">Download CV</a>
+                <a href="assets/docs/CarlosOrozco_FrontEndCV.pdf" class="btn btn-outline-secondary btn-lg" download="">Download CV</a>
             </div>
         </div>
     </section>
@@ -95,24 +99,26 @@
             <h2 class="section-title text-center mb-5">My Projects</h2>
             
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
-                <div class="carousel-inner px-2 px-md-4">
+                <div class="carousel-inner px-2 px-md-5">
                     <!-- Slide 1 (6 projects) -->
                     <div class="carousel-item active">
-                        <div class="row g-3">
+                        <div class="row g-1">
                             <!-- Project 1 -->
                             <div class="col-md-4">
                                 <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 1" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
+                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 1" class="object-fit-cover
+                                    . w-100 h-100 position-absolute top-0 start-0">
                                     <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Breve descripción del proyecto destacando sus características.</p>
+                                        <h1 class="text-center text-white fw-bold">NavidApp</h1>
+                                        <p class="text-white mb-3 mx-3 fw-medium ">A website with a vintage style countdown for the next christmas day with animations using vanila Javascript.</p>
                                         <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
+                                            <a href="https://carlosorozcom.github.io/NavidApp/" target="_blank" class="btn btn-primary btn-sm me-2">Demo</a>
+                                            <a href="https://github.com/CarlosOrozcoM/NavidApp" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
                                         </div>
                                         <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">HTML</span>
-                                            <span class="badge bg-custom-green">CSS</span>
-                                            <span class="badge bg-custom-green">JS</span>
+                                            <span class="label label-html bg-custon-white ">HTML</span>
+                                            <span class="label label-bootstrap bg-custon-white">CSS/Booststrap</span>
+                                            <span class="label label-js bg-custon-white">JavaScript</span>
                                         </div>
                                     </div>
                                 </div>
@@ -120,16 +126,19 @@
                             <!-- Project 2 -->
                             <div class="col-md-4">
                                 <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 2" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
+                                    <img src="assets/images/cardImg_ePlantShopping.webp" alt="Proyecto 1" class="object-fit-cover
+                                    . w-100 h-100 position-absolute top-0 start-0">
                                     <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Descripción de este segundo proyecto en la galería.</p>
+                                        <h1 class="text-center text-white fw-bold">e-PlantShopping</h1>
+                                        <p class="text-white mb-3 mx-3 fw-medium ">A responsive e-commerce web application for plant shopping, built with React and Vite, featuring dynamic cart management and category filtering.</p>
                                         <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
+                                            <a href="https://carlosorozcom.github.io/e-plantShopping/" target="_blank" class="btn btn-primary btn-sm me-2">Demo</a>
+                                            <a href="https://github.com/CarlosOrozcoM/e-plantShopping.git/" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
                                         </div>
                                         <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">React</span>
-                                            <span class="badge bg-custom-green">Bootstrap</span>
+                                            <span class="label label-html bg-custon-white ">HTML</span>
+                                            <span class="label label-css bg-custon-white">CSS</span>
+                                            <span class="label label-react bg-custon-white">React</span>
                                         </div>
                                     </div>
                                 </div>
@@ -137,199 +146,27 @@
                             <!-- Project 3 -->
                             <div class="col-md-4">
                                 <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 3" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
+                                    <img src="assets/images/cardImg_stayHealthy.webp" alt="Proyecto 1" class="object-fit-cover
+                                    . w-100 h-100 position-absolute top-0 start-0">
                                     <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Una app con un diseño moderno e interactivo.</p>
+                                        <h1 class="text-center text-white fw-bold">Stay Healthy</h1>
+                                        <p class="text-white mb-3 mx-3 fw-medium ">A comprehensive health and wellness web application designed for appointment scheduling and medical service management.</p>
                                         <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
+                                        <!--   <a href="#" target="_blank" class="btn btn-primary btn-sm me-2">Demo</a> -->
+                                            <a href="https://github.com/CarlosOrozcoM/stay_healthy_app.git" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
                                         </div>
                                         <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">Figma</span>
-                                            <span class="badge bg-custom-green">CSS</span>
+                                            <span class="label label-html bg-custon-white ">HTML</span>
+                                            <span class="label label-css bg-custon-white">CSS</span>
+                                            <span class="label label-js bg-custon-white">JavaScript</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Project 4 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 4" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Proyecto de análisis de datos y visualización.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">Python</span>
-                                            <span class="badge bg-custom-green">JS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 5 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 5" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Herramienta de productividad para equipos remotos.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">React</span>
-                                            <span class="badge bg-custom-green">Node.js</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 6 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 6" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Sitio web e-commerce con carrito funcional.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">HTML</span>
-                                            <span class="badge bg-custom-green">CSS</span>
-                                            <span class="badge bg-custom-green">JS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 2 (6 projects) -->
-                    <div class="carousel-item">
-                        <div class="row g-3">
-                            <!-- Project 7 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 7" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Blog personal optimizado para SEO.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">Wordpress</span>
-                                            <span class="badge bg-custom-green">CSS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 8 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 8" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Aplicación de gestión de inventarios.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">C#</span>
-                                            <span class="badge bg-custom-green">SQL</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 9 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 9" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Plataforma de streaming de video.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">React</span>
-                                            <span class="badge bg-custom-green">UX/UI</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 10 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 10" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Portafolio fotográfico para artistas.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">Lightroom</span>
-                                            <span class="badge bg-custom-green">HTML</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 11 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 11" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Dashboard interactivo financiero.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">JS</span>
-                                            <span class="badge bg-custom-green">Figma</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 12 -->
-                            <div class="col-md-4">
-                                <div class="card project-card mx-auto border-0 shadow-sm ratio ratio-1x1 overflow-hidden">
-                                    <img src="assets/images/cardImg_navidApp.webp" alt="Proyecto 12" class="object-fit-cover w-100 h-100 position-absolute top-0 start-0">
-                                    <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 opacity-0">
-                                        <p class="text-white mb-3 fw-medium">Landing page de producto de software.</p>
-                                        <div class="mb-3">
-                                            <a href="#" class="btn btn-primary btn-sm me-2">Demo</a>
-                                            <a href="#" class="btn btn-outline-light btn-sm">GitHub</a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-center gap-2">
-                                            <span class="badge bg-custom-green">Bootstrap</span>
-                                            <span class="badge bg-custom-green">HTML</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
-                
-                <!-- Carousel Controls outside the projects container inner -->
-                <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%); width: 3rem; height: 3rem;"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%); width: 3rem; height: 3rem;"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            
-            <!-- Indicators / dots can go here if needed -->
-            <div class="text-center mt-4">
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active btn btn-sm btn-outline-secondary rounded-circle p-2 mx-1"></button>
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" class="btn btn-sm btn-outline-secondary rounded-circle p-2 mx-1"></button>
             </div>
         </div>
     </section>
@@ -344,24 +181,24 @@
                         <form id="contactForm">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" required placeholder="Your name">
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required placeholder="name@email.com">
+                                <input type="email" class="form-control" id="email"  name="email" required placeholder="name@email.com">
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label"></label>
-                                <textarea class="form-control" id="message" rows="5" required placeholder="Let's schedule a call..."></textarea>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Let's schedule a call..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Send</button>
+                            <button type="submit" class="btn btn-primary w-100" id="submit-button">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer class="py-4 text-center text-md-start">
         <div class="container">
@@ -370,8 +207,8 @@
                     <p class="mb-0 text-muted">&copy; <span id="currentYear"></span> Carlos Orozco. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-decoration-none me-3 social-link"><img src="" alt=""></a>
-                    <a href="#" class="text-decoration-none me-3 social-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alberto-orozco-m/" class="text-decoration-none me-3 social-link" target="_blank"><img src="assets/images/icon_linkedin.png" alt=""></a>
+                    <a href="https://github.com/CarlosOrozcoM" class="text-decoration-none me-3 social-link" target="_blank"><img src="assets/images/icon_github.png"  alt=""  ></a>
                 </div>
             </div>
         </div>
