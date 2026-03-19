@@ -2,12 +2,16 @@
 
 A modern, responsive, and interactive personal portfolio website built to showcase my skills, projects, and professional background as a Front-End Developer.
 
+
+![hero-preview](https://github.com/CarlosOrozcoM/MyPortfolio/blob/main/assets/images/hero-preview.webp)
+
+**[🔴 Live Demo / Portfolio] (https://carlosorozcom.github.io/MyPortfolio/)**
+
 ## 🚀 Features
 
-- **Modern Design:** Clean aesthetics, glassmorphism elements, and smooth CSS animations.
+- **Modern Design:** Clean aesthetics and smooth CSS animations.
 - **Responsive Layout:** Fully responsive grid system built with Bootstrap 5, optimized for mobile, tablet, and desktop devices.
-- **Interactive Projects Gallery:** A dedicated section displaying projects in a sleek 2x3 carousel grid with blur-hover effects for displaying project details and technologies used.
-- **Dynamic Typography:** Uses Google Fonts pairing ('Raleway' for headings & buttons, 'Figtree' for body copy).
+- **Interactive Projects Gallery:** A dedicated section displaying a project grid with blur-hover effects for displaying project details and technologies used.
 - **SEO & Performance Optimized:** Semantic HTML5 structure and optimized assets for faster loading times.
 
 ## 🛠️ Tech Stack
@@ -15,7 +19,8 @@ A modern, responsive, and interactive personal portfolio website built to showca
 - **HTML5:** Semantic architecture.
 - **CSS3:** Custom styles, CSS variables for theming, transitions, and hover animations.
 - **JavaScript (Vanilla):** DOM manipulation, smooth scrolling, and dynamic elements.
-- **Bootstrap 5 (v5.3.3):** Utility classes, responsive grid system, and the interactive projects carousel.
+- **Bootstrap 5 (v5.3.3):** Utility classes, responsive grid system.
+- **EmailJS:** True email contact form functionality on the front side. 
 - **Google Fonts:** Figtree & Raleway.
 
 ## 📁 Repository Structure
