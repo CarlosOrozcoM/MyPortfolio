@@ -218,6 +218,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn, button {
 }
 
 
+.projects, .about{
+    position: relative;
+}
+
+
 /* Project Cards */
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -312,5 +317,47 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+/*  Shape Dividers */
+.shape-divider{
+    --divider-height: 124px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; 
+}
+
+.shape-divider svg{
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: var(--divider-height);
+}
+
+.shape-fill-bg-light {
+    fill: var(--color-bg-light);
+}
+.shape-fill-main {
+    fill: var(--color-main)
+}
+
+.shape-divider-bottom {
+   bottom: 0;
+}
+
+.shape-divider-top {
+    top: 0;
+    transform: rotateX(180deg);
+}
+
+
+@media (max-width: 768px) {
+    .shape-divider {
+        --divider-height: 70px;
     }
 }
