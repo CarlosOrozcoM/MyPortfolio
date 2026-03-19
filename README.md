@@ -4,10 +4,9 @@ A modern, responsive, and interactive personal portfolio website built to showca
 
 ## 🚀 Features
 
-- **Modern Design:** Clean aesthetics, glassmorphism elements, and smooth CSS animations.
+- **Modern Design:** Clean aesthetics and smooth CSS animations.
 - **Responsive Layout:** Fully responsive grid system built with Bootstrap 5, optimized for mobile, tablet, and desktop devices.
-- **Interactive Projects Gallery:** A dedicated section displaying projects in a sleek 2x3 carousel grid with blur-hover effects for displaying project details and technologies used.
-- **Dynamic Typography:** Uses Google Fonts pairing ('Raleway' for headings & buttons, 'Figtree' for body copy).
+- **Interactive Projects Gallery:** A dedicated section displaying a project grid with blur-hover effects for displaying project details and technologies used.
 - **SEO & Performance Optimized:** Semantic HTML5 structure and optimized assets for faster loading times.
 
 ## 🛠️ Tech Stack
@@ -16,6 +15,7 @@ A modern, responsive, and interactive personal portfolio website built to showca
 - **CSS3:** Custom styles, CSS variables for theming, transitions, and hover animations.
 - **JavaScript (Vanilla):** DOM manipulation, smooth scrolling, and dynamic elements.
 - **Bootstrap 5 (v5.3.3):** Utility classes, responsive grid system, and the interactive projects carousel.
+- **EmailJS:** True email contact form functionality on the front side. 
 - **Google Fonts:** Figtree & Raleway.
 
 ## 📁 Repository Structure
@@ -50,7 +50,7 @@ To run this project locally, simply clone the repository and open the `index.htm
 
 - **Name:** Carlos Orozco
 - **Role:** Front-End Developer
-- **Email:**
-- **LinkedIn/GitHub:** [Your Links Here]
+- [LinkedIn](https://www.linkedin.com/in/alberto-orozco-m/)
+- [Github](https://github.com/CarlosOrozcoM)
 
 ---
